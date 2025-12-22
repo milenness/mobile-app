@@ -1,128 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/mobile-app/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/mobile-app/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/mobile-app/assets/index-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/mobile-app/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/mobile-app/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile App Prototype</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" />
+
+  <!-- Custom CSS -->
+  <script type="module" crossorigin src="/mobile-app/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/mobile-app/assets/index-C3bcajah.css">
+</head>
+
+<body>
+  <header class="header">
+  <section class="header-section">
+    <div class="container">
+      <nav class="nav">
+        <a class="nav-logo" href="./index.html" aria-label="Site logo">
+          Mobileapp
+        </a>
+
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="#hero">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#features">Features</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#team">Team</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#feedback">Testimonials</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#location">Contact</a>
+          </li>
+        </ul>
+
+        <button class="burger-button menu-btn-open" type="button" aria-label="Open menu">
+          <svg class="burger-icon" width="26" height="16">
+            <use href="/mobile-app/assets/icons-BtnQG1jA.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </section>
 </header>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+  <main>
+    <section class="hero-section">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/mobile-app/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <picture class="hero-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/mobile-app/assets/hero-desk-C3sMvcA5.png 1x, /mobile-app/assets/hero-desk@2x-BYkxiaPc.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/mobile-app/assets/hero-tab-oJRUXySE.png 1x, /mobile-app/assets/hero-tab@2x-BAVXQ3Fr.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="/mobile-app/assets/hero-tel-CJnTlK66.png 1x, /mobile-app/assets/hero-tel@2x-De2HiRXg.png 2x" />
+      <img src="/mobile-app/assets/hero-desk-C3sMvcA5.png" alt="Hero Image">
+    </picture>
+
+    <h1 class="hero-title">Introducing Mobileapp</h1>
+    <p class="hero-text">Download our mobile app today!</p>
+
+    <img class="grad" src="/mobile-app/assets/grad-Cm4gOPF1.png" alt="">
+    <img class="gradient" src="/mobile-app/assets/gradient-UQaXhif6.png" alt="">
+    <img class="hero-icons" 
+         srcset="/mobile-app/assets/hero-icons-tx0dGZYV.png 1x, /mobile-app/assets/hero-icons@2x-DBrZ2iRt.png 2x"
+         src="/mobile-app/assets/hero-icons-tx0dGZYV.png" alt="">
+
+    <ul class="hero-list">
+      <li class="hero-item">
+        <svg class="arrow-icon" width="18" height="18">
+          <use href="/mobile-app/assets/icons-BtnQG1jA.svg#icon-arrow"></use>
+        </svg>
+        Real-time updates and notifications for timely information
+      </li>
+      <li class="hero-item">
+        <svg class="arrow-icon" width="18" height="18">
+          <use href="/mobile-app/assets/icons-BtnQG1jA.svg#icon-arrow"></use>
+        </svg>
+        Robust analytics and reporting for data-driven insights
+      </li>
+      <li class="hero-item">
+        <svg class="arrow-icon" width="18" height="18">
+          <use href="/mobile-app/assets/icons-BtnQG1jA.svg#icon-arrow"></use>
+        </svg>
+        Offline capabilities for uninterrupted use
+      </li>
+    </ul>
+
+    <button type="button" class="btn hero-bth">Download</button>
   </div>
 </section>
+    <section class="key-section">
+  <picture class="grad-img-one">
+    <source media="(min-width: 768px)" 
+            srcset="/mobile-app/assets/img-grad-1-DaaRhDUF.png 1x, /mobile-app/assets/img-grad-1@2x-WBU78q-O.png 2x" />
+    <source media="(max-width: 767px)" 
+            srcset="/mobile-app/assets/img-grad-tel-1-CZAMkW4p.png 1x, /mobile-app/assets/img-grad-tel-1@2x-CcWcZuWR.png 2x" />
+    <img src="/mobile-app/assets/img-grad-1-DaaRhDUF.png" alt="" aria-hidden="true">
+  </picture>
 
-      <article class="badges">
+  <picture class="grad-img-two">
+    <source media="(min-width: 768px)" 
+            srcset="/mobile-app/assets/img-grad-2-cT7CV86J.png 1x, /mobile-app/assets/img-grad-2@2x-B7ywCQK2.png 2x" />
+    <source media="(max-width: 767px)" 
+            srcset="/mobile-app/assets/img-grad-tel-2-DIgBAbnU.png 1x, /mobile-app/assets/img-grad-tel-2@2x-C4folmDY.png 2x" />
+    <img src="/mobile-app/assets/img-grad-2-cT7CV86J.png" alt="" aria-hidden="true">
+  </picture>
+
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <h2 class="section-title key-title">Key features</h2>
+    <p class="key-text">Get the best mobile experience with our Mobileapp. With a user-friendly interface, personalized recommendations, secure transactions, and real-time updates, our app offers everything you need to stay connected and productive</p>
+    
+    <picture class="key-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/mobile-app/assets/img-desk-B21LstL3.png 1x, /mobile-app/assets/img-desk@2x-E_XWSY8Z.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/mobile-app/assets/img-tab-ZT0YsSvs.png 1x, /mobile-app/assets/img-tab@2x-wUGLOWEr.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="/mobile-app/assets/img-tel-DRlLSns1.png 1x, /mobile-app/assets/img-tel@2x-CHP0rVXu.png 2x" />
+      <img src="/mobile-app/assets/img-desk-B21LstL3.png" alt="features Image">
+    </picture>
+
+    <ul class="key-list">
+      <li class="key-item">
+        <img src="/mobile-app/assets/icon-BQ0Tv6rm.svg" alt="">
+        <div class="text-wrap">
+          <p class="list-title">User-Friendly Interface:</p>
+          <p class="list-text">Intuitive and easy-to-navigate interface designed to provide a seamless mobile experience for users.</p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="key-item">
+        <img src="/mobile-app/assets/icon-BQ0Tv6rm.svg" alt="">
+        <div class="text-wrap">
+          <p class="list-title">Personalized Recommendations:</p>
+          <p class="list-text">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada</p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="key-item">
+        <img src="/mobile-app/assets/icon-BQ0Tv6rm.svg" alt="">
+        <div class="text-wrap">
+          <p class="list-title">Real-Time Updates:</p>
+          <p class="list-text">Users receive real-time updates and notifications to stay informed on important news and events, and to stay up-to-date with changes to the app.</p>
+        </div>
+      </li>
+      <li class="key-item">
+        <img src="/mobile-app/assets/icon-BQ0Tv6rm.svg" alt="">
+        <div class="text-wrap">
+          <p class="list-title">Integration with Other Apps:</p>
+          <p class="list-text">The app integrates with other popular apps, making it easy for users to connect with their social media accounts, or to easily make in-app purchases using their preferred payment method.</p>
+        </div>
+      </li>
+      <li class="key-item">
+        <img src="/mobile-app/assets/icon-BQ0Tv6rm.svg" alt="">
+        <div class="text-wrap">
+          <p class="list-title">Multi-Language Support:</p>
+          <p class="list-text">The app is designed to be accessible to users all around the world, with support for multiple languages, making it easier for people to use the app in their native language.</p>
+        </div>
+      </li>
+      <li class="key-item">
+        <img src="/mobile-app/assets/icon-BQ0Tv6rm.svg" alt="">
+        <div class="text-wrap">
+          <p class="list-title">Offline Capabilities:</p>
+          <p class="list-text">The app offers offline capabilities, allowing users to access certain features and content even when they are not connected to the internet.</p>
+        </div>
       </li>
     </ul>
   </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
+</section>
+    <section class="video-section">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
+    <h2 class="section-title video-title">Watch the video</h2>
+    <p class="video-text">
+      Watch the video below to see our mobile app in action. With a
+      user-friendly interface, personalized recommendations, secure
+      transactions, and real-time updates, our app is available for download on
+      both Apple and Android devices and is designed to make your life easier.
     </p>
+    <div class="btn-wrapper">
+        <button type="button" class="btn download-app" >
+          <svg class="download-icon" width="30" height="36">
+            <use href="/mobile-app/assets/icons-BtnQG1jA.svg#icon-apple"></use>
+          </svg>
+        </button>
+    
+        <button type="button" class="btn download-app">
+          <svg class="download-icon" width="32" height="36">
+            <use href="/mobile-app/assets/icons-BtnQG1jA.svg#icon-android"></use>
+          </svg>
+        </button>
+    </div>
+
+    <picture class="video-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/mobile-app/assets/video-desk-CS4WkHJP.png 1x, /mobile-app/assets/video-desk@2x-Bc5AzhMT.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/img/video/video-tabl.png 1x, /mobile-app/assets/video-tabl@2x-uJ9d_Zkv.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="/mobile-app/assets/video-tel-CIPoQj-C.png 1x, /mobile-app/assets/video-tel@2x-DnW0jaS7.png 2x" />
+      <img src="/mobile-app/assets/video-desk-CS4WkHJP.png" alt="Video Image">
+    </picture>
+
+      <picture class="video-grad">
+      <source media="(min-width: 1158px)" 
+              srcset="/mobile-app/assets/vid-grad-desk-1l4Cfl6m.png 1x, /mobile-app/assets/vid-grad-desk@2x-BhQ9mYOf.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/mobile-app/assets/vid-grad-tabl-CEo5IclN.png 1x, /mobile-app/assets/vid-grad-tabl@2x-CFFolzy-.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="/mobile-app/assets/vid-grad-tabl-CEo5IclN.png 1x, /mobile-app/assets/vid-grad-tabl@2x-CFFolzy-.png 2x" />
+      <img src="/mobile-app/assets/vid-grad-desk-1l4Cfl6m.png" alt="Grad Image">
+    </picture>
   </div>
-</footer>
+</section>
+
+    <section class="section-team">
+<div class="container">
+    <h2 class="section-title">Our team</h2>
+    <p class="team-text">Our team is made up of talented and passionate individuals who are committed to providing the best experience for our users. Each member brings a unique set of skills and expertise to the table, allowing us to work collaboratively and effectively to achieve our goals.</p>
+    <ul class="team-list">
+        <li class="team-item">
+         <picture class="team-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="img/team/.png 1x, /img/team/@2x.png 2x" />
+      <img src="/img/team/.png" alt="David Patel">
+    </picture>
+       <div class="team-text-wrapper">
+            <p class="team-card-name">David Patel</p>
+            <p class="team-card-text">Managing Direcor</p>
+       </div>
+    </li>
+
+     <li class="team-item">
+               <picture class="team-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="img/team/.png 1x, /img/team/@2x.png 2x" />
+      <img src="/img/team/.png" alt="Rachel Kim">
+    </picture>
+       <div class="team-text-wrapper">
+            <p class="team-card-name">Rachel Kim</p>
+            <p class="team-card-text">Lead Designer</p>
+       </div>
+    </li>
+
+    <li class="team-item">
+             <picture class="team-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="img/team/.png 1x, /img/team/@2x.png 2x" />
+      <img src="/img/team/.png" alt="Samantha Chen">
+    </picture>
+       <div class="team-text-wrapper">
+            <p class="team-card-name">Samantha Chen</p>
+            <p class="team-card-text">Lead Developer</p>
+       </div>
+    </li>
 
 
-  </body>
+    <li class="team-item">
+         <picture class="team-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/img/team/.png 1x, /img/team/@2x.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="img/team/.png 1x, /img/team/@2x.png 2x" />
+      <img src="/img/team/.png" alt="Andrew Nguyen">
+    </picture>
+       <div class="team-text-wrapper">
+            <p class="team-card-name">Andrew Nguyen</p>
+            <p class="team-card-text">Sr. UI Designer</p>
+       </div>
+    </li>
+    </ul>
+</div>
+</section>
+    
+  </main>
+
+  
+
+  <div class="mobile-menu">
+  <button class="close-btn menu-btn-close" type="button">
+    <svg class="close-icon" width="32" height="32">
+      <use href="/mobile-app/assets/icons-BtnQG1jA.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <nav class="mob-nav">
+    <a class="nav-logo" href="./index.html" aria-label="Site logo">
+          Mobileapp</a>
+
+        <ul class="mob-list">
+          <li class="mob-item">
+            <a class="mob-link" href="#hero">Home</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link" href="#features">Features</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link" href="#team">Team</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link" href="#feedback">Testimonials</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link" href="#location">Contact</a>
+          </li>
+        </ul>
+  </nav>
+  <img class="menu-gradient" src="/mobile-app/assets/gradient-9BZuD4Di.png" alt="">
+</div>
+  
+
+</body>
+
 </html>
