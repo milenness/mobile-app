@@ -1,0 +1,44 @@
+<section class="video-section">
+  <div class="container">
+    <h2 class="section-title video-title">Watch the video</h2>
+    <p class="video-text">
+      Watch the video below to see our mobile app in action. With a
+      user-friendly interface, personalized recommendations, secure
+      transactions, and real-time updates, our app is available for download on
+      both Apple and Android devices and is designed to make your life easier.
+    </p>
+    <div class="btn-wrapper">
+        <button type="button" class="btn download-app" >
+          <svg class="download-icon" width="30" height="36">
+            <use href="/img/icons.svg#icon-apple"></use>
+          </svg>
+        </button>
+    
+        <button type="button" class="btn download-app">
+          <svg class="download-icon" width="32" height="36">
+            <use href="/img/icons.svg#icon-android"></use>
+          </svg>
+        </button>
+    </div>
+
+    <picture class="video-img">
+      <source media="(min-width: 1158px)" 
+              srcset="/img/video/video-desk.png 1x, /img/video/video-desk@2x.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/img/video/video-tabl.png 1x, /img/video/video-tabl@2x.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="img/video/video-tel.png 1x, /img/video/video-tel@2x.png 2x" />
+      <img src="/img/video/video-desk.png" alt="Video Image">
+    </picture>
+
+      <picture class="video-grad">
+      <source media="(min-width: 1158px)" 
+              srcset="/img/video/vid-grad-desk.png 1x, /img/video/vid-grad-desk@2x.png 2x" />
+      <source media="(min-width: 768px)" 
+              srcset="/img/video/vid-grad-tabl.png 1x, /img/video/vid-grad-tabl@2x.png 2x" />
+      <source media="(max-width: 767px)" 
+              srcset="/img/video/vid-grad-tabl.png 1x, /img/video/vid-grad-tabl@2x.png 2x" />
+      <img src="/img/video/vid-grad-desk.png" alt="Grad Image">
+    </picture>
+  </div>
+</section>

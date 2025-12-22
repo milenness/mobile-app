@@ -1,0 +1,140 @@
+.hero-section {
+  position: relative;
+  padding: 184px 0 127px 0;
+  background: #06071b;
+}
+
+
+.hero-img {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    top: 320px;
+    right: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-img {
+    top: 50px;
+    right: 32px;
+  }
+}
+
+.hero-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 40px;
+  }
+}
+
+.hero-text {
+  margin-bottom: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 20px;
+  }
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-list {
+    gap: 14px;
+    margin-bottom: 62px;
+  }
+}
+
+.hero-item {
+  display: flex;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-item {
+    font-size: 14px;
+  }
+}
+
+.arrow-icon {
+  fill: #fff;
+}
+
+.hero-bth {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 0;
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-bth {
+    margin: 0;
+  }
+}
+
+.grad,
+.hero-icons,
+.gradient {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .grad {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 0;
+  }
+
+  .hero-icons {
+    display: block;
+    position: absolute;
+    right: 207px;
+    bottom: 0;
+  }
+
+  .gradient {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 216px;
+    right: 16px;
+    pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .grad {
+    left: 20px;
+  }
+
+  .hero-icons,
+  .gradient {
+    display: none; 
+  }
+}
