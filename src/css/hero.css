@@ -31,6 +31,8 @@
   font-weight: 700;
   font-size: 24px;
   color: #fff;
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,6 +45,8 @@
   margin-bottom: 28px;
   font-weight: 700;
   color: #fff;
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,6 +60,8 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -88,6 +94,8 @@
   margin: 0 auto;
   padding: 12px 0;
   width: 200px;
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -106,7 +114,7 @@
   .grad {
     display: block;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: 120px;
     left: 0;
   }
@@ -121,7 +129,7 @@
   .gradient {
     display: block;
     position: absolute;
-    z-index: 1;
+     z-index: 0;
     top: 216px;
     right: 16px;
     pointer-events: none;
