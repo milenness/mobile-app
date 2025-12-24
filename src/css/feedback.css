@@ -1,0 +1,105 @@
+.feedback-section {
+padding: 0 0 40px;
+    background-image: url('/img/feedback/back-tel.png');
+    background-repeat: no-repeat;
+  background-position: center;
+ background-size: 100% 600px;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .feedback-section {
+    background-image: url('/img/feedback/back-tel@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-section {
+    background-image: url('/img/feedback/back-tabl.png');
+  }
+  @media (min-resolution: 192dpi) {
+    .feedback-section {
+      background-image: url('/img/feedback/back-tabl@2x.png');
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedback-section {
+    background-image: url('/img/feedback/back-desk.png');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .feedback-section {
+      background-image: url('/img/feedback/back-desk@2x.png');
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+.feedback-section {
+padding: 45px 0;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+.feedback-section {
+padding: 80px 0;
+}
+}
+
+.feedback-title {
+    margin-bottom: 40px;
+}
+
+.feedback-list {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+.feedback-list {
+    margin-bottom: 64px;
+}
+}
+
+.feedback-item-name {
+    font-weight: 700;
+font-size: 18px;
+margin:0 auto 12px;
+text-align: center;
+}
+
+.feedback-item-desk {
+    line-height: 1.71;
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+.feedback-item-desk {
+    margin-bottom: 40px;
+}
+}
+
+.feedback-item-text {
+    line-height: 1.43;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+@media screen and (min-width: 768px) {
+.feedback-item-text {
+    line-height: 1.5;
+    font-size: 16px;
+     max-width: 886px;
+}
+}
+
+.pag {
+}
+
+.pag-item {
+}
+
+.download-icon {
+}

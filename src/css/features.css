@@ -2,6 +2,27 @@
   position: relative;
   padding: 40px 0;
   overflow: hidden;
+  background-image: url('/img/features/back-tel.png');
+    background-repeat: no-repeat;
+  background-position: center;
+ background-size: 100% 100%;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .key-section {
+    background-image: url('/img/features/back-tel@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .key-section {
+    background-image: url('/img/features/back-tabl.png');
+  }
+  @media (min-resolution: 192dpi) {
+    .key-section {
+      background-image: url('/img/features/back-tabl@2x.png');
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -167,51 +188,5 @@
 @media screen and (min-width: 768px) {
   .list-text {
     font-size: 14px;
-  }
-}
-
-.grad-img-one,
-.grad-img-two {
-  position: absolute;
-  z-index: -5;
-  width: 100%;
-  left: 0;
-  pointer-events: none;
-}
-
-.grad-img-one img,
-.grad-img-two img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.grad-img-one {
-  top: -200px;
-}
-
-.grad-img-two {
-  bottom: -200px;
-}
-
-@media screen and (min-width: 768px) {
-  .grad-img-one {
-    width: auto;
-    top: -145px;
-    right: 0;
-    left: auto;
-  }
-
-  .grad-img-two {
-    width: auto;
-    bottom: -150px;
-    left: 0;
-    right: auto;
-  }
-
-  .grad-img-one img,
-  .grad-img-two img {
-    width: auto;
-    max-width: 100%;
   }
 }
