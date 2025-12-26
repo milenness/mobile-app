@@ -96,10 +96,11 @@ text-align: center;
 }
 
 .pag {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
 
 .pag-item {
-}
-
-.download-icon {
+  fill: #939EAC;
 }

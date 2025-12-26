@@ -59,14 +59,40 @@ margin-bottom: 20px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+border: 1px solid transparent; 
+
+  background-image: 
+    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%),
+    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
 cursor: pointer;
 position: relative;
 z-index: 2;
+transition: all 0.3s ease;
 }
 
 .download-icon {
-    fill: #fff;
+     fill: #ffffff;
+    stroke: transparent;
+    stroke-width: 1px;
+    transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+    .download-app:hover,
+    .download-app:focus {
+        background-image: 
+            linear-gradient(#06071B, #06071B), 
+            linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+    }
+
+    .download-app:hover .download-icon {
+       fill: transparent;
+        stroke: url(#my-gradient);
+    }
 }
 
 .btn-wrapper {

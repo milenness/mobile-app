@@ -56,26 +56,32 @@ body:has(.mobile-menu.is-open) {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 20px;
   
-  border: none;
+  border: 1px solid transparent; 
   border-radius: 5px;
-  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+
+  background-image: 
+    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%),
+    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   
   color: white;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-
 
 @media (hover: hover) {
   .btn:hover,
   .btn:focus {
-    background: #06071b; 
-  }
-
-  .btn:hover::before,
-  .btn:focus::before {
-    opacity: 1;
+    background-image: 
+      linear-gradient(#06071b, #06071b),
+      linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  
+    color: #ffff;
   }
 }
 
