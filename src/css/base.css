@@ -29,7 +29,7 @@ button {
   border: none;
 }
 
-body:has(.modal-backdrop.is-open) {
+body:has(.modal-backdrop:not(.is-hidden)) {
   overflow: hidden;
 }
 

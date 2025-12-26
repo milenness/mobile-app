@@ -1,32 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('.sub-form');
-  const backdrop = document.querySelector('.modal-backdrop');
-  const closeX = backdrop?.querySelector('.close-btn-backdrop');
-  const closeBtn = backdrop?.querySelector('.modal-button');
+const modal = document.querySelector('.modal-backdrop');
 
-  if (!backdrop || !form) return;
+const modalBtnsOpen = document.querySelectorAll('.modal-btn-open');
+const modalBtnClose = document.querySelector('.modal-btn-close');
 
-  const open = () => {
-    backdrop.classList.add('subscription-open');
-    document.body.style.overflow = 'hidden';
-  };
-  const close = () => {
-    backdrop.classList.remove('subscription-open');
-    document.body.style.overflow = '';
-  };
+const toggleModal = () => modal.classList.toggle('is-hidden');
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    open();
-    form.reset();
-  });
-
-  closeX?.addEventListener('click', close);
-  closeBtn?.addEventListener('click', close);
-  backdrop.addEventListener('click', e => {
-    if (e.target === backdrop) close();
-  });
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') close();
-  });
+modalBtnsOpen.forEach(btn => {
+  btn.addEventListener('click', toggleModal);
 });
+
+if (modalBtnClose) {
+  modalBtnClose.addEventListener('click', toggleModal);
+}
