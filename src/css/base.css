@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -20,8 +20,8 @@ h3,
 h4,
 h5,
 h6 {
-font-weight: 700;
-font-size: 24px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 button {
@@ -29,7 +29,7 @@ button {
   border: none;
 }
 
-body:has(.modal-backdrop.subscription-open) {
+body:has(.modal-backdrop.is-open) {
   overflow: hidden;
 }
 
@@ -51,23 +51,21 @@ body:has(.mobile-menu.is-open) {
   overflow: hidden;
 }
 
-
-.btn { 
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  
-  border: 1px solid transparent; 
+
+  border: 1px solid transparent;
   border-radius: 5px;
 
-  background-image: 
-    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%),
+  background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%),
     linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
 
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  
+
   color: white;
   font-weight: 700;
   cursor: pointer;
@@ -77,24 +75,23 @@ body:has(.mobile-menu.is-open) {
 @media (hover: hover) {
   .btn:hover,
   .btn:focus {
-    background-image: 
-      linear-gradient(#06071b, #06071b),
+    background-image: linear-gradient(#06071b, #06071b),
       linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
-  
+
     color: #ffff;
   }
 }
 
 .section-title {
   font-weight: 700;
-font-size: 20px;
-color: #000;
-text-transform: uppercase;
-text-align: center;
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
- .section-title {
-   font-size: 24px;
- }
-} 
+  .section-title {
+    font-size: 24px;
+  }
+}
