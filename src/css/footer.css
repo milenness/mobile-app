@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .section-footer {
     padding: 80px 0 21px;
     background-image: url('/img/footer/footer-grad-desk.svg');
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .footer-title {
     margin-bottom: 80px;
   }
@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .fotter-form {
     grid-column: 2;
     grid-row: 1 / 6;
@@ -80,7 +80,7 @@
   color: #939eac;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .form-input {
     width: 288px;
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .comment {
     width: 608px;
   }
@@ -128,13 +128,13 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .form-btn {
     justify-self: end;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,7 +162,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .fotter-text {
     text-align: start;
   }
@@ -181,7 +181,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .fotter-desk {
     text-align: start;
     margin: 0 0 20px;
@@ -201,7 +201,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .social-list {
     margin-bottom: 20px;
     justify-content: start;
@@ -261,7 +261,7 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .footer-link {
     font-size: 16px;
     text-align: start;
@@ -274,7 +274,7 @@
   color: #87cefa;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .footer-link {
     text-align: start;
   }
@@ -303,7 +303,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .fotter-info {
     margin-top: 101px;
   }

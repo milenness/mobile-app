@@ -4,7 +4,6 @@
   background: #06071b;
 }
 
-
 .hero-img {
   position: absolute;
   z-index: 1;
@@ -19,7 +18,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .hero-img {
     top: 50px;
     right: 32px;
@@ -129,20 +128,20 @@
   .gradient {
     display: block;
     position: absolute;
-     z-index: 0;
+    z-index: 0;
     top: 216px;
     right: 16px;
     pointer-events: none;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .grad {
     left: 20px;
   }
 
   .hero-icons,
   .gradient {
-    display: none; 
+    display: none;
   }
 }

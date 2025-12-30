@@ -3,9 +3,9 @@
   padding: 40px 0;
   overflow: hidden;
   background-image: url('/img/features/back-tel.png');
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
- background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .key-section {
     padding: 100px 0;
   }
@@ -41,7 +41,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .key-title {
     margin-bottom: 80px;
   }
@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .key-text {
     max-width: 855px;
     margin: 0 auto 56px;
@@ -79,7 +79,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .key-img {
     left: 50%;
     transform: translateX(-50%);
@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .key-list {
     max-width: 973px;
     margin: 117px auto 0;
@@ -137,7 +137,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .key-item {
     grid-column: auto !important;
     grid-row: auto !important;

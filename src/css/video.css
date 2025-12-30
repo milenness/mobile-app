@@ -1,143 +1,141 @@
 .video-section {
-    padding: 40px 0 321px;
-    background-color: #06071B;
-    position: relative;
-    overflow: hidden;
+  padding: 40px 0 321px;
+  background-color: #06071b;
+  position: relative;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-.video-section {
+  .video-section {
     padding: 80px 0 338px 0;
-}
+  }
 }
 
-@media screen and (min-width: 1440px) {
-.video-section {
+@media screen and (min-width: 1280px) {
+  .video-section {
     padding: 60px 0 98px;
-}
+  }
 }
 
 .video-title {
-    color: #fff;
-    margin-bottom: 24px;
+  color: #fff;
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
-.video-title {
-   margin-bottom: 20px;
+  .video-title {
+    margin-bottom: 20px;
+  }
 }
-} 
 
-@media screen and (min-width: 1440px) {
-.video-title {
-       text-align:start;
-}
+@media screen and (min-width: 1280px) {
+  .video-title {
+    text-align: start;
+  }
 }
 
 .video-text {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
-.video-text {
-font-size: 16px;
-margin-bottom: 20px;
+  .video-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }
-} 
 
-@media screen and (min-width: 1440px) {
-.video-text {
-    text-align:start;
+@media screen and (min-width: 1280px) {
+  .video-text {
+    text-align: start;
     margin-bottom: 40px;
     max-width: 479px;
-}
+  }
 }
 
 .download-app {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-border: 1px solid transparent; 
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid transparent;
 
-  background-image: 
-    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%),
+  background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%),
     linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
 
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
-cursor: pointer;
-position: relative;
-z-index: 2;
-transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 
 .download-icon {
-     fill: #ffffff;
-    stroke: transparent;
-    stroke-width: 1px;
-    transition: all 0.3s ease;
+  fill: #ffffff;
+  stroke: transparent;
+  stroke-width: 1px;
+  transition: all 0.3s ease;
 }
 
 @media (hover: hover) {
-    .download-app:hover,
-    .download-app:focus {
-        background-image: 
-            linear-gradient(#06071B, #06071B), 
-            linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
-    }
+  .download-app:hover,
+  .download-app:focus {
+    background-image: linear-gradient(#06071b, #06071b),
+      linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  }
 
-    .download-app:hover .download-icon {
-       fill: transparent;
-        stroke: url(#my-gradient);
-    }
+  .download-app:hover .download-icon {
+    fill: transparent;
+    stroke: url(#my-gradient);
+  }
 }
 
 .btn-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-@media screen and (min-width: 1440px) {
-.btn-wrapper {
-  justify-content:flex-start;
+@media screen and (min-width: 1280px) {
+  .btn-wrapper {
+    justify-content: flex-start;
+  }
 }
-} 
 
 .video-img {
-    position: absolute;
-    left: 50%;
+  position: absolute;
+  left: 50%;
   transform: translateX(-50%);
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-.video-img {
- left: 60%;
+  .video-img {
+    left: 60%;
     transform: translateX(-50%);
-}
-} 
-
-@media screen and (min-width: 1440px) {
-.video-img {
-top: 0;
-left: 100%;
-}
-} 
-
-.video-grad {
-position: absolute;
-top: -15px;
-left: 0;
+  }
 }
 
-@media screen and (min-width: 1440px) {
-.video-grad {
+@media screen and (min-width: 1280px) {
+  .video-img {
     top: 0;
-left: 150px;
+    left: 100%;
+  }
 }
-} 
+
+.video-grad {
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .video-grad {
+    top: 0;
+    left: 150px;
+  }
+}
